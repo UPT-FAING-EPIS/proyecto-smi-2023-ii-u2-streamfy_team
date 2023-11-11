@@ -1,2 +1,21 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/y1LgyCES)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12783750&assignment_repo_type=AssignmentRepo)
+## INTEGRANTES
+
+- Chambilla Mardínez, Renato Eduardo - 2020066918.<br>
+- Corrales Solis, Moisés Alessandro - 2020067579.<br>
+- Medina López, Marcelo José - 2020066917.<br>
+- Valle Bustamante, Gustavo Alonso - 2020066916.<br>
+- Viveros Blanco, Farley Rodrigo Eduardo - 2020066896<br>
+
+## PROYECTO : STREAMFY
+
+- Streamfy va a hacer un aplicacion de musica donde podras escuchar musica sin comerciales y tendra una interfaz facil de manejar para el usuario.
+  
+## HERRAMIENTAS
+
+| SOFTWARE  | 
+| ------------- |
+|Visual Studio Community con MAUI
+|Plataforma de Nube
+|Herramientas de Programación y Depuración
+|Herramientas para Desarrollo Móvil
+|GitHub
