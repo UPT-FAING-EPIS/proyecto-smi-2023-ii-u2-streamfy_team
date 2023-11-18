@@ -1,16 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
              x:Class="Streamfy.Dashboard"
-             NavigationPage.HasNavigationBar="True"
+             NavigationPage.HasNavigationBar="False"
              Title="Dashboard">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label
-                x:Name="UserEmail"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <SearchBar
+                x:Name="SearchBar"
+                Placeholder="Buscar..."
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"
+                SearchCommand="{Binding SearchCommand}"
+                SearchCommandParameter="{Binding Text, Source={x:Reference SearchBar}}"
+                SearchButtonPressed="OnSearchButtonPressed" />
+
+            <ListView x:Name="SearchResultsListView"
+          ItemsSource="{Binding SearchResults}"
+          VerticalOptions="FillAndExpand"
+          Grid.Row="2">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Label Text="{Binding Title}" FontAttributes="Bold" Grid.Row="0" />
+
+                                <StackLayout Orientation="Horizontal" Grid.Row="1">
+                                    <Label Text="Artist: " FontAttributes="Italic" />
+                                    <Label Text="{Binding Artist.Name}" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Grid.Row="1">
+                                    <BoxView WidthRequest="10" />                                   
+                                    <Label Text="{Binding Duration}" HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label x:Name="NoResultsLabel"
+                   Text="No se encontraron resultados."
+                   IsVisible="{Binding NoResultsVisible}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Row="2" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

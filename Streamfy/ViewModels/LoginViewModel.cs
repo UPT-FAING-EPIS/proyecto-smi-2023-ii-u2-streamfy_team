@@ -12,7 +12,7 @@ namespace Streamfy.ViewModels
 {
     internal class LoginViewModel : INotifyPropertyChanged
     {
-        public string webApiKey = "AIzaSyCJZPlQpPfzQEBtzk3YSuhZ0tG8t5wng_Q";
+        public string webApiKey = "AIzaSyAj9XyHXUn0KPsQVRYjZnxc_kHrrSdZH6Y";
 
         private INavigation _navigation;
         private string userName;

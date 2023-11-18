@@ -49,7 +49,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Platforms\Android\google-services.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <GoogleServicesJson Include="Platforms\Android\google-services.json" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+		<PackageReference Include="FirebaseDatabase.net" Version="4.0.2" />
+		<PackageReference Include="FirebaseStorage.net" Version="1.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
@@ -61,6 +71,12 @@
 	  <MauiXaml Update="RegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+	  <PackageReference Include="Xamarin.GooglePlayServices.Base">
+	    <Version>118.1.0.1</Version>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

@@ -1,0 +1,1 @@
+C:\Users\renat\source\repos\Streamfy\Streamfy.csproj;x64

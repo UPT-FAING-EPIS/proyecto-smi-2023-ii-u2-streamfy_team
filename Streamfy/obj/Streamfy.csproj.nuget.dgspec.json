@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\renat\\source\\repos\\Streamfy\\Streamfy.csproj": {}
+    "C:\\Users\\LEGION\\Desktop\\Moviles\\proyecto-smi-2023-ii-u2-streamfy_team\\Streamfy\\Streamfy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\renat\\source\\repos\\Streamfy\\Streamfy.csproj": {
+    "C:\\Users\\LEGION\\Desktop\\Moviles\\proyecto-smi-2023-ii-u2-streamfy_team\\Streamfy\\Streamfy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\renat\\source\\repos\\Streamfy\\Streamfy.csproj",
+        "projectUniqueName": "C:\\Users\\LEGION\\Desktop\\Moviles\\proyecto-smi-2023-ii-u2-streamfy_team\\Streamfy\\Streamfy.csproj",
         "projectName": "Streamfy",
-        "projectPath": "C:\\Users\\renat\\source\\repos\\Streamfy\\Streamfy.csproj",
-        "packagesPath": "C:\\Users\\renat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\renat\\source\\repos\\Streamfy\\obj\\",
+        "projectPath": "C:\\Users\\LEGION\\Desktop\\Moviles\\proyecto-smi-2023-ii-u2-streamfy_team\\Streamfy\\Streamfy.csproj",
+        "packagesPath": "C:\\Users\\LEGION\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LEGION\\Desktop\\Moviles\\proyecto-smi-2023-ii-u2-streamfy_team\\Streamfy\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\renat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LEGION\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -31,7 +31,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "net7.0-android33.0": {
@@ -65,6 +66,14 @@
               "target": "Package",
               "version": "[3.7.2, )"
             },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -86,7 +95,7 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.100, )",
+              "version": "[7.0.101, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
@@ -147,6 +156,10 @@
               "target": "Package",
               "version": "[1.7.0.1, )",
               "autoReferenced": true
+            },
+            "Xamarin.GooglePlayServices.Base": {
+              "target": "Package",
+              "version": "[118.1.0.1, )"
             }
           },
           "imports": [
@@ -177,7 +190,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -185,6 +198,14 @@
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[3.7.2, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -207,7 +228,7 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.100, )",
+              "version": "[7.0.101, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
@@ -243,7 +264,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -251,6 +272,14 @@
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[3.7.2, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -273,7 +302,7 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.100, )",
+              "version": "[7.0.101, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
@@ -310,7 +339,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -318,6 +347,14 @@
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[3.7.2, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -340,12 +377,12 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.100, )",
+              "version": "[7.0.101, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
-              "version": "[7.0.100, )",
+              "version": "[7.0.101, )",
               "autoReferenced": true
             },
             "Microsoft.WindowsAppSDK": {
@@ -372,19 +409,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.13, 7.0.13]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.13, 7.0.13]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.29, 10.0.19041.29]"
+              "version": "[10.0.19041.31, 10.0.19041.31]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.13, 7.0.13]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -404,7 +441,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

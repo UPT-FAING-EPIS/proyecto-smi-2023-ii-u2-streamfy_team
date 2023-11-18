@@ -8,45 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Streamfy
-build_property.ProjectDir = C:\Users\renat\source\repos\Streamfy\
+build_property.ProjectDir = C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\
 
-[C:/Users/renat/source/repos/Streamfy/App.xaml]
+[C:/Users/LEGION/Desktop/Moviles/proyecto-smi-2023-ii-u2-streamfy_team/Streamfy/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/renat/source/repos/Streamfy/AppShell.xaml]
+[C:/Users/LEGION/Desktop/Moviles/proyecto-smi-2023-ii-u2-streamfy_team/Streamfy/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/renat/source/repos/Streamfy/Dashboard.xaml]
+[C:/Users/LEGION/Desktop/Moviles/proyecto-smi-2023-ii-u2-streamfy_team/Streamfy/Dashboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.Dashboard.xaml
 build_metadata.AdditionalFiles.TargetPath = Dashboard.xaml
 build_metadata.AdditionalFiles.RelativePath = Dashboard.xaml
 
-[C:/Users/renat/source/repos/Streamfy/MainPage.xaml]
+[C:/Users/LEGION/Desktop/Moviles/proyecto-smi-2023-ii-u2-streamfy_team/Streamfy/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/renat/source/repos/Streamfy/RegisterPage.xaml]
+[C:/Users/LEGION/Desktop/Moviles/proyecto-smi-2023-ii-u2-streamfy_team/Streamfy/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
 
-[C:/Users/renat/source/repos/Streamfy/Resources/Styles/Colors.xaml]
+[C:/Users/LEGION/Desktop/Moviles/proyecto-smi-2023-ii-u2-streamfy_team/Streamfy/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/renat/source/repos/Streamfy/Resources/Styles/Styles.xaml]
+[C:/Users/LEGION/Desktop/Moviles/proyecto-smi-2023-ii-u2-streamfy_team/Streamfy/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
