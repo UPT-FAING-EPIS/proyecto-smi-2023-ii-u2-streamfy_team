@@ -2020,3 +2020,7 @@ C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\o
 C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\obj\Debug\net7.0-android\resizetizer\r\drawable\pause.png
+C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\obj\Debug\net7.0-android\resizetizer\r\drawable\play.png
+C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\obj\Debug\net7.0-android\android\assets\Plugin.Maui.Audio.dll
+C:\Users\LEGION\Desktop\Moviles\proyecto-smi-2023-ii-u2-streamfy_team\Streamfy\obj\Debug\net7.0-android\android\src\crc64467b05f37239e7a6\StreamMediaDataSource.java

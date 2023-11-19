@@ -334,6 +334,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "compile": {
@@ -2945,6 +2958,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "compile": {
@@ -5488,6 +5514,19 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -8039,6 +8078,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "compile": {
@@ -10582,6 +10634,19 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -13133,6 +13198,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "compile": {
@@ -15676,6 +15754,19 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -18227,6 +18318,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "compile": {
@@ -20774,6 +20878,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -21575,6 +21691,14 @@
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
         }
       },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -22339,6 +22463,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -23421,6 +23557,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -24214,6 +24358,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -25294,6 +25450,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -26087,6 +26251,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -27167,6 +27343,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -27960,6 +28144,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -29040,6 +29236,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -29833,6 +30037,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -30913,6 +31129,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -31706,6 +31930,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -32788,6 +33024,14 @@
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
         }
       },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -33577,6 +33821,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -34653,6 +34909,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -35447,6 +35711,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -36248,6 +36524,14 @@
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
         }
       },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -37012,6 +37296,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -38094,6 +38390,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -38887,6 +39191,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -39967,6 +40283,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -40760,6 +41084,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -41840,6 +42176,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -42633,6 +42977,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -43713,6 +44069,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -44506,6 +44870,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -45586,6 +45962,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -46379,6 +46763,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -47461,6 +47857,14 @@
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
         }
       },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -48250,6 +48654,18 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -49326,6 +49742,14 @@
         },
         "compile": {
           "ref/netcoreapp1.1/System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Runtime.InteropServices.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -50257,6 +50681,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -51935,6 +52368,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -53921,6 +54363,15 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -55903,6 +56354,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -57889,6 +58349,15 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -59873,6 +60342,15 @@
           }
         }
       },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -61855,6 +62333,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -63845,6 +64332,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -66783,6 +67279,24 @@
         "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Plugin.Maui.Audio/2.0.0": {
+      "sha512": "0XAwMMxYFPCOb/N69Uf+GCCe4OnETfV2mz9eFA2+gYsmw4ayMhtwmiOo5qECOISXnXNqwxkK4ACmFmlZ7+AR6Q==",
+      "type": "package",
+      "path": "plugin.maui.audio/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0-android31.0/Plugin.Maui.Audio.dll",
+        "lib/net6.0-android31.0/Plugin.Maui.Audio.xml",
+        "lib/net6.0-ios16.1/Plugin.Maui.Audio.dll",
+        "lib/net6.0-maccatalyst16.1/Plugin.Maui.Audio.dll",
+        "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll",
+        "lib/net6.0/Plugin.Maui.Audio.dll",
+        "plugin.maui.audio.2.0.0.nupkg.sha512",
+        "plugin.maui.audio.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -69866,6 +70380,23 @@
         "ref/xamarinwatchos10/_._",
         "system.runtime.interopservices.4.3.0.nupkg.sha512",
         "system.runtime.interopservices.nuspec"
+      ]
+    },
+    "System.Runtime.InteropServices.NFloat.Internal/6.0.1": {
+      "sha512": "vq+81ZqZz9oHV6iWgGXFnxHAyO5xA73nfvDNu5LwymIK294is5bRo3P063VToAbDRyyc0qq/YFRYjHmiD6Cv8Q==",
+      "type": "package",
+      "path": "system.runtime.interopservices.nfloat.internal/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/net6.0/System.Runtime.InteropServices.dll",
+        "ref/net6.0/System.Runtime.InteropServices.xml",
+        "system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+        "system.runtime.interopservices.nfloat.internal.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
@@ -73138,6 +73669,7 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.Audio >= 2.0.0",
       "Xamarin.Android.Glide >= 4.13.2.2",
       "Xamarin.AndroidX.Browser >= 1.4.0.3",
       "Xamarin.AndroidX.Legacy.Support.V4 >= 1.0.0.15",
@@ -73160,7 +73692,8 @@
       "Microsoft.Extensions.Logging >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.Audio >= 2.0.0"
     ],
     "net7.0-maccatalyst16.1": [
       "FirebaseAuthentication.net >= 3.7.2",
@@ -73171,7 +73704,8 @@
       "Microsoft.Extensions.Logging >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.Audio >= 2.0.0"
     ],
     "net7.0-windows10.0.19041": [
       "FirebaseAuthentication.net >= 3.7.2",
@@ -73184,7 +73718,8 @@
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.101",
       "Microsoft.WindowsAppSDK >= 1.2.221209.1",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "Plugin.Maui.Audio >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -73288,6 +73823,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Xamarin.Android.Glide": {
             "target": "Package",
@@ -73421,6 +73960,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
@@ -73495,6 +74038,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
@@ -73580,6 +74127,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

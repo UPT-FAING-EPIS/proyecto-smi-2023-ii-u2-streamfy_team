@@ -28,7 +28,8 @@
             <ListView x:Name="SearchResultsListView"
           ItemsSource="{Binding SearchResults}"
           VerticalOptions="FillAndExpand"
-          Grid.Row="2">
+          Grid.Row="2"
+          ItemTapped="OnItemTapped">>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

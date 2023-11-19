@@ -6,6 +6,10 @@ using System.Linq;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Streamfy.Models;
+using Streamfy.Views;
+using Plugin.Maui.Audio;
+
+
 
 namespace Streamfy
 {
@@ -14,7 +18,7 @@ namespace Streamfy
     {
         private FirebaseViewModel storageHelper;
         private DeezerViewModel deezerViewModel;
-
+        private IAudioPlayer audioPlayer;
         public Dashboard()
         {
             InitializeComponent();
@@ -75,7 +79,7 @@ namespace Streamfy
                                 var mappedResults = searchResponse.Data.Select(result => new DeezerData
                                 {
                                     Title = result.Title,
-                                    Link = result.Link,
+                                    Link = result.Preview,
                                     Duration = result.Duration,
                                     Artist = new DeezerArtist { Name = result.Artist.Name },
                                     
@@ -106,6 +110,30 @@ namespace Streamfy
         {         
             SearchBar.Unfocus();
         }
+
+
+        private void OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e.Item is DeezerData selectedTrack)
+            {
+                
+                if (audioPlayer != null)
+                {
+                    audioPlayer.Stop();
+                }
+
+                
+                Reproductor reproductorPage = new Reproductor();
+
+                
+                reproductorPage.BindingContext = new ReproductorDeezerViewModel(selectedTrack.Link);
+
+                
+                Navigation.PushAsync(reproductorPage);
+            }
+        }
+
+
 
         private async Task<DeezerData> ObtenerDatosDeezer()
         {

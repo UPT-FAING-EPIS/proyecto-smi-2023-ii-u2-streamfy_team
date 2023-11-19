@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Streamfy.Views.Reproductor"
+             Title="Reproductor">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image x:Name="PlayPauseButton" Source="play.png" WidthRequest="100" HeightRequest="100" 
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPlayPauseTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Slider x:Name="PositionSlider" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Estado: " HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

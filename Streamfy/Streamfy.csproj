@@ -50,6 +50,8 @@
 
 	<ItemGroup>
 	  <None Remove="Platforms\Android\google-services.json" />
+	  <None Remove="Resources\Images\pause.png" />
+	  <None Remove="Resources\Images\play.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -62,6 +64,7 @@
 		<PackageReference Include="FirebaseStorage.net" Version="1.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Plugin.Maui.Audio" Version="2.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -69,6 +72,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="RegisterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Reproductor.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
