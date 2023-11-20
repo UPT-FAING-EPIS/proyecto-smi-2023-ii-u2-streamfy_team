@@ -5,6 +5,7 @@ Microsoft.Maui.Controls.Xaml.dll
 Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
+Plugin.Maui.Audio.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -164,4 +165,3 @@ play-services-tasks.aar
 playservicesbasement-18.1.0.aar
 playservicestasks-18.0.2.aar
 playservicesbase-18.1.0.aar
-Plugin.Maui.Audio.dll

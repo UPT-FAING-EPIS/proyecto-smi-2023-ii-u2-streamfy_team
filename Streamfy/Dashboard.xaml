@@ -5,8 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Streamfy.Dashboard"
-             NavigationPage.HasNavigationBar="False"
-             Title="Dashboard">
+             NavigationPage.HasNavigationBar="True"
+             BackgroundColor="gray"
+             Title="Musica">
+
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary" IconImageSource="menu.svg"></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>-->
 
     <ContentPage.Content>
         <Grid>
@@ -26,14 +32,17 @@
                 SearchButtonPressed="OnSearchButtonPressed" />
 
             <ListView x:Name="SearchResultsListView"
-          ItemsSource="{Binding SearchResults}"
-          VerticalOptions="FillAndExpand"
-          Grid.Row="2"
-          ItemTapped="OnItemTapped">>
+            ItemsSource="{Binding SearchResults}"
+            VerticalOptions="FillAndExpand"
+            Grid.Row="4"
+            ItemTapped="OnItemTapped"
+            SeparatorVisibility="Default"
+            SeparatorColor="Black">
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10">
+                            <Grid Padding="6">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
@@ -42,7 +51,7 @@
                                 <Label Text="{Binding Title}" FontAttributes="Bold" Grid.Row="0" />
 
                                 <StackLayout Orientation="Horizontal" Grid.Row="1">
-                                    <Label Text="Artist: " FontAttributes="Italic" />
+                                    <Label Text="A Artista: " FontAttributes="Italic" />
                                     <Label Text="{Binding Artist.Name}" />
                                 </StackLayout>
 
@@ -64,6 +73,7 @@
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="2" />
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

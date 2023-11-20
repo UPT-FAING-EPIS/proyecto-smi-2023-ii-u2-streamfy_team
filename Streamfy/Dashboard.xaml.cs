@@ -8,6 +8,10 @@ using System.Windows.Input;
 using Streamfy.Models;
 using Streamfy.Views;
 using Plugin.Maui.Audio;
+using System;
+using System.Windows.Input;
+using Microsoft.Maui.Controls;
+using System.Collections.Generic;
 
 
 
@@ -22,16 +26,110 @@ namespace Streamfy
         public Dashboard()
         {
             InitializeComponent();
-            //GetProfileInfo();
             deezerViewModel = new DeezerViewModel();
-            BindingContext = deezerViewModel; 
+            BindingContext = deezerViewModel;
+
+            // Obt茅n la referencia al ToolbarItem
+            var menuToolbarItem = new ToolbarItem
+            {
+                Order = ToolbarItemOrder.Primary,
+                IconImageSource = "menu.svg"
+            };
+
+            // Asigna un controlador de eventos para el evento Clicked
+            menuToolbarItem.Clicked += OnMenuToolbarItemClicked;
+
+            ToolbarItems.Add(menuToolbarItem);
         }
 
-        //private void GetProfileInfo()
-        //{
-        //    var userInfo = JsonConvert.DeserializeObject<Firebase.Auth.FirebaseAuth>(Preferences.Get("FreshFirebaseToken", ""));
-        //    UserEmail.Text = userInfo.User.Email;
-        //}
+        private async void OnMenuToolbarItemClicked(object sender, EventArgs e)
+        {
+            var options = new ObservableCollection<OptionWithImage>
+            {
+                new OptionWithImage { Option = "Inicio", ImageSource = "home.png" },
+                new OptionWithImage { Option = "Busqueda", ImageSource = "search.png" },
+                new OptionWithImage { Option = "Cerrar sesion", ImageSource = "logout.png" }
+            };
+
+            var menuCollectionView = new CollectionView
+            {
+                ItemsSource = options,
+                ItemTemplate = new DataTemplate(() =>
+                {
+                    var grid = new Grid();
+                    grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+
+                    var image = new Image
+                    {
+                        WidthRequest=50,
+                        HeightRequest=50,
+                    };
+                    image.SetBinding(Image.SourceProperty, "ImageSource");
+
+                    var label = new Label { VerticalOptions = LayoutOptions.CenterAndExpand };
+                    label.SetBinding(Label.TextProperty, "Option");
+
+                    grid.Children.Add(image);
+                    grid.Children.Add(label);
+
+                    return grid;
+                })
+            };
+
+            var frame = new Frame
+            {
+                Content = menuCollectionView,
+                Padding = new Thickness(10),
+                HasShadow = true,
+                CornerRadius = 5
+            };
+
+            var stackLayout = new StackLayout
+            {
+                Children = { frame },
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+                HorizontalOptions = LayoutOptions.CenterAndExpand
+            };
+
+            var scrollView = new ScrollView { Content = stackLayout };
+
+            var popup = new ContentPage
+            {
+                Content = scrollView,
+            };
+
+            await Navigation.PushModalAsync(popup);
+
+            menuCollectionView.SelectionChanged += (o, args) =>
+            {
+                var selectedOption = (OptionWithImage)args.CurrentSelection.FirstOrDefault();
+                if (selectedOption != null)
+                {
+                    switch (selectedOption.Option)
+                    {
+                        case "Inicio":
+                            // L贸gica para la opci贸n "Inicio"
+                            break;
+
+                        case "Busqueda":
+                            // L贸gica para la opci贸n "Busqueda"
+                            break;
+
+                        case "Cerrar sesion":
+                            // L贸gica para la opci贸n "Cerrar sesion"
+                            break;
+                    }
+
+                    Navigation.PopModalAsync();
+                }
+            };
+        }
+
+        public class OptionWithImage
+    {
+        public string Option { get; set; }
+        public string ImageSource { get; set; }
+    }
 
         public class DeezerViewModel : BaseViewModel
         {
@@ -95,13 +193,13 @@ namespace Streamfy
                         }
                         else
                         {
-                            Console.WriteLine($"Error en la solicitud a la API de Deezer. C骴igo de estado: {response.StatusCode}");
+                            Console.WriteLine($"Error en la solicitud a la API de Deezer. C锟絛igo de estado: {response.StatusCode}");
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Error al realizar la b鷖queda: {ex.Message}");
+                    Console.WriteLine($"Error al realizar la b锟絪queda: {ex.Message}");
                 }
             }
         }
@@ -122,11 +220,11 @@ namespace Streamfy
                     audioPlayer.Stop();
                 }
 
-                
-                Reproductor reproductorPage = new Reproductor();
 
-                
-                reproductorPage.BindingContext = new ReproductorDeezerViewModel(selectedTrack.Link);
+                Reproductor reproductorPage = new Reproductor(selectedTrack.Link);
+
+                var reproductorViewModel = new ReproductorDeezerViewModel(selectedTrack.Link);
+                reproductorPage.BindingContext = reproductorViewModel;
 
                 
                 Navigation.PushAsync(reproductorPage);
@@ -154,7 +252,7 @@ namespace Streamfy
                 }
                 else
                 {
-                    throw new Exception($"Error en la solicitud a la API de Deezer. C骴igo de estado: {response.StatusCode}");
+                    throw new Exception($"Error en la solicitud a la API de Deezer. C锟絛igo de estado: {response.StatusCode}");
                 }
             }
         }

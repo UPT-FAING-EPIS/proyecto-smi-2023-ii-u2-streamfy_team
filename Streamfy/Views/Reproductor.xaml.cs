@@ -8,14 +8,13 @@ namespace Streamfy.Views
     {
         private ReproductorDeezerViewModel viewModel;
 
-        public Reproductor()
+        public Reproductor(string deezerLink)
         {
             InitializeComponent();
 
-            viewModel = new ReproductorDeezerViewModel("https://cdns-preview-c.dzcdn.net/stream/c-c45ae335d3f89e153c37217f4495cefc-4.mp3");
+            viewModel = new ReproductorDeezerViewModel(deezerLink);
             BindingContext = viewModel;
 
-            
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += OnPlayPauseTapped;
             PlayPauseButton.GestureRecognizers.Add(tapGestureRecognizer);
@@ -23,10 +22,7 @@ namespace Streamfy.Views
 
         private void OnPlayPauseTapped(object sender, EventArgs e)
         {
-            
             viewModel.PlayCommand.Execute(null);
-
-            
         }
     }
 }

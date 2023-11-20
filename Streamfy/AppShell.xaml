@@ -4,11 +4,33 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Streamfy"
-    Shell.FlyoutBehavior="Disabled">
+    FlyoutBackgroundColor="Black"
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:Dashboard}"
+        Route="Dashboard" />
+
+    <FlyoutItem Title="Home" Icon="home.svg">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:Dashboard}"
+        Route="Dashboard" />
+    </FlyoutItem>
+    <FlyoutItem Title="Reproduccion reciente" Icon="recently.svg">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:Dashboard}"
+        Route="Dashboard" />
+    </FlyoutItem>
+    <FlyoutItem Title="PlayList" Icon="playlist.svg">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:Dashboard}"
+        Route="Dashboard" />
+    </FlyoutItem>
+    <FlyoutItem Title="Cerrar Sesion" Icon="logout.svg">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:Dashboard}"
+        Route="Dashboard" />
+    </FlyoutItem>
 
 </Shell>
