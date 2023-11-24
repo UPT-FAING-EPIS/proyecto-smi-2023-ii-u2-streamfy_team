@@ -72,6 +72,33 @@ namespace Streamfy
                     grid.Children.Add(image);
                     grid.Children.Add(label);
 
+                    var tapGestureRecognizer = new TapGestureRecognizer();
+                    tapGestureRecognizer.Tapped += async (s, args) =>
+                    {
+                        var selectedOption = (OptionWithImage)((View)s).BindingContext;
+                        if (selectedOption != null)
+                        {
+                            switch (selectedOption.Option)
+                            {
+                                case "Inicio":
+                                    await Navigation.PushAsync(new InicioPage());
+                                    break;
+
+                                case "Busqueda":
+                                    await Navigation.PushAsync(new Dashboard());
+                                    break;
+
+                                case "Cerrar sesion":
+                                    await Navigation.PushAsync(new MainPage());
+                                    break;
+                            }
+
+                            Navigation.PopModalAsync();
+                        }
+                    };
+
+                    grid.GestureRecognizers.Add(tapGestureRecognizer);
+
                     return grid;
                 })
             };
@@ -99,31 +126,8 @@ namespace Streamfy
             };
 
             await Navigation.PushModalAsync(popup);
-
-            menuCollectionView.SelectionChanged += (o, args) =>
-            {
-                var selectedOption = (OptionWithImage)args.CurrentSelection.FirstOrDefault();
-                if (selectedOption != null)
-                {
-                    switch (selectedOption.Option)
-                    {
-                        case "Inicio":
-                            // Lógica para la opción "Inicio"
-                            break;
-
-                        case "Busqueda":
-                            // Lógica para la opción "Busqueda"
-                            break;
-
-                        case "Cerrar sesion":
-                            // Lógica para la opción "Cerrar sesion"
-                            break;
-                    }
-
-                    Navigation.PopModalAsync();
-                }
-            };
         }
+
 
         public class OptionWithImage
     {
@@ -193,13 +197,13 @@ namespace Streamfy
                         }
                         else
                         {
-                            Console.WriteLine($"Error en la solicitud a la API de Deezer. C�digo de estado: {response.StatusCode}");
+                            Console.WriteLine($"Error en la solicitud a la API de Deezer. Codigo de estado: {response.StatusCode}");
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Error al realizar la b�squeda: {ex.Message}");
+                    Console.WriteLine($"Error al realizar la busqueda: {ex.Message}");
                 }
             }
         }
@@ -252,7 +256,7 @@ namespace Streamfy
                 }
                 else
                 {
-                    throw new Exception($"Error en la solicitud a la API de Deezer. C�digo de estado: {response.StatusCode}");
+                    throw new Exception($"Error en la solicitud a la API de Deezer. Codigo de estado: {response.StatusCode}");
                 }
             }
         }

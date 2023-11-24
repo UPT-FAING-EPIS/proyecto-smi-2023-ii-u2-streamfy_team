@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="Streamfy.InicioPage"
+             mc:Ignorable="d"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <Image Source="streamfy.png"
+           HorizontalOptions="CenterAndExpand"
+           VerticalOptions="CenterAndExpand" />
+
+    <Frame Grid.Row="1"
+           Margin="0,0,0,-200"
+           BorderColor="#1C375C"
+           CornerRadius="50"
+           HasShadow="True"
+           HeightRequest="700">
+
+        <StackLayout Padding="15">
+
+            <Label Text="Streamfy, Tu APP de Música On-Streaming"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="#7824B6"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <Label Text="En Streamfy, nos emociona darte la bienvenida a un mundo vibrante y emocionante de música en streaming. Sumérgete en un océano de canciones que abarcan géneros, décadas y estados de ánimo. ¡Prepárate para sumergirte en un viaje musical emocionante con Streamfy! La melodía perfecta te espera en cada rincón de nuestra plataforma. ¡Bienvenido al sonido de tu vida!"
+                   FontSize="14"
+                   TextColor="#333333"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <Button Text="Explorar música"
+                    FontSize="12"
+                    FontAttributes="Bold"
+                    BackgroundColor="#7824B6"
+                    TextColor="White"
+                    CornerRadius="10"
+                    VerticalOptions="End"
+                    Clicked="OnExploreMusicClicked" />
+        </StackLayout>
+    </Frame>
+</ContentPage>

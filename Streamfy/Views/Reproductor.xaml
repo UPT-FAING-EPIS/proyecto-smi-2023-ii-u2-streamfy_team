@@ -5,14 +5,21 @@
              Title="Reproductor">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Image x:Name="PlayPauseButton" Source="play.png" WidthRequest="100" HeightRequest="100" 
+            <Image x:Name="PlayPauseButton" Source="play.png" WidthRequest="80" HeightRequest="100" 
                    VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnPlayPauseTapped" />
                 </Image.GestureRecognizers>
             </Image>
 
-            <Slider x:Name="PositionSlider" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Image x:Name="PauseButton" Source="pause.png" WidthRequest="80" HeightRequest="100"
+                VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPauseTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+             <Slider x:Name="PositionSlider" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" />
 
             <Label Text="Estado: " HorizontalOptions="Center" />
         </StackLayout>

@@ -9,10 +9,9 @@
              BackgroundColor="gray"
              Title="Musica">
 
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem Order="Primary" IconImageSource="menu.svg"></ToolbarItem>
-        
-    </ContentPage.ToolbarItems>-->
+    <ContentPage.ToolbarItems>
+                
+    </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
         <Grid>

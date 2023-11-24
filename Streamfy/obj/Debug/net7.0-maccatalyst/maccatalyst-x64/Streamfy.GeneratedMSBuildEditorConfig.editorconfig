@@ -8,51 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Streamfy
-build_property.ProjectDir = D:\DESCARGAS\STREAMFLIX1911\Streamfy\
+build_property.ProjectDir = C:\Users\renat\Downloads\Streamfy\
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/App.xaml]
+[C:/Users/renat/Downloads/Streamfy/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/AppShell.xaml]
+[C:/Users/renat/Downloads/Streamfy/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/Dashboard.xaml]
+[C:/Users/renat/Downloads/Streamfy/Dashboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.Dashboard.xaml
 build_metadata.AdditionalFiles.TargetPath = Dashboard.xaml
 build_metadata.AdditionalFiles.RelativePath = Dashboard.xaml
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/MainPage.xaml]
+[C:/Users/renat/Downloads/Streamfy/InicioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.InicioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = InicioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = InicioPage.xaml
+
+[C:/Users/renat/Downloads/Streamfy/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/RegisterPage.xaml]
+[C:/Users/renat/Downloads/Streamfy/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/Resources/Styles/Colors.xaml]
+[C:/Users/renat/Downloads/Streamfy/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/Resources/Styles/Styles.xaml]
+[C:/Users/renat/Downloads/Streamfy/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[D:/DESCARGAS/STREAMFLIX1911/Streamfy/Views/Reproductor.xaml]
+[C:/Users/renat/Downloads/Streamfy/Views/Reproductor.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Streamfy.Views.Reproductor.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Reproductor.xaml
