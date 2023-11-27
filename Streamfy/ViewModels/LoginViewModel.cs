@@ -58,12 +58,23 @@ namespace Streamfy.ViewModels
                 var content = await auth.GetFreshAuthAsync();
                 var serializedContent = JsonConvert.SerializeObject(content);
                 Preferences.Set("FreshFirebaseToken", serializedContent);
-                await this._navigation.PushAsync(new Dashboard());
+                await this._navigation.PushAsync(new InicioPage());
             }
-            catch (Exception ex)
+            catch (FirebaseAuthException ex)
             {
-                await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
-                throw;
+                if (ex.Reason == AuthErrorReason.EmailExists)
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Ingrese correctamente sus credenciales", "OK");
+                }
+                else
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Ingrese correctamente sus credenciales", "OK");
+                }
+
+                if (this._navigation != null)
+                {
+                    await this._navigation.PopAsync();
+                }
             }
 
 

@@ -58,13 +58,24 @@ namespace Streamfy.ViewModels
                 var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(Email, Password);
                 string token = auth.FirebaseToken;
                 if (token != null)
-                    await App.Current.MainPage.DisplayAlert("Alert", "Usted ha sido registrado", "OK");
+                    await App.Current.MainPage.DisplayAlert("Felicitaciones", "Usted ha sido registrado y forma parte de la familia Streamfy", "OK");
                 await this._navigation.PopAsync();
             }
-            catch (Exception ex)
+            catch (FirebaseAuthException ex)
             {
-                await App.Current.MainPage.DisplayAlert("Alert", "El usuario ya ha sido registrado anteriormente", "OK");
-                await  this._navigation.PopAsync();
+                if (ex.Reason == AuthErrorReason.EmailExists)
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "El usuario ya ha sido registrado anteriormente", "OK");
+                }
+                else
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "El usuario ya ha sido registrado anteriormente", "OK");
+                }
+
+                if (this._navigation != null)
+                {
+                    await this._navigation.PopAsync();
+                }
             }
         }
     }

@@ -3,12 +3,9 @@
              xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              x:Class="Streamfy.InicioPage"
+             NavigationPage.HasNavigationBar="False"
              mc:Ignorable="d"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
-
-    <Image Source="streamfy.png"
-           HorizontalOptions="CenterAndExpand"
-           VerticalOptions="CenterAndExpand" />
 
     <Frame Grid.Row="1"
            Margin="0,0,0,-200"
@@ -19,27 +16,38 @@
 
         <StackLayout Padding="15">
 
+            <Image Source="streamfy.png"
+                   HorizontalOptions="CenterAndExpand"
+                   WidthRequest="100" 
+                   HeightRequest="100"
+                   VerticalOptions="Start"
+                   Margin="4" />
+
             <Label Text="Streamfy, Tu APP de Música On-Streaming"
                    FontSize="22"
                    FontAttributes="Bold"
                    TextColor="#7824B6"
                    HorizontalOptions="Center"
+                   Margin="7"
                    VerticalOptions="Center" />
 
             <Label Text="En Streamfy, nos emociona darte la bienvenida a un mundo vibrante y emocionante de música en streaming. Sumérgete en un océano de canciones que abarcan géneros, décadas y estados de ánimo. ¡Prepárate para sumergirte en un viaje musical emocionante con Streamfy! La melodía perfecta te espera en cada rincón de nuestra plataforma. ¡Bienvenido al sonido de tu vida!"
-                   FontSize="14"
+                   FontSize="15"
                    TextColor="#333333"
                    HorizontalOptions="Center"
+                   Margin="7"
                    VerticalOptions="Center" />
 
             <Button Text="Explorar música"
-                    FontSize="12"
+                    FontSize="16"
                     FontAttributes="Bold"
                     BackgroundColor="#7824B6"
                     TextColor="White"
                     CornerRadius="10"
                     VerticalOptions="End"
+                    Margin="4"
                     Clicked="OnExploreMusicClicked" />
         </StackLayout>
     </Frame>
 </ContentPage>
+

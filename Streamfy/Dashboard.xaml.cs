@@ -43,90 +43,120 @@ namespace Streamfy
         }
 
         private async void OnMenuToolbarItemClicked(object sender, EventArgs e)
+{
+    // Opciones del menú con imágenes
+    var options = new ObservableCollection<OptionWithImage>
+    {
+        new OptionWithImage { Option = "Inicio", ImageSource = "home.png" },
+        new OptionWithImage { Option = "Búsqueda", ImageSource = "search.png" },
+        new OptionWithImage { Option = "Cerrar sesión", ImageSource = "logout.png" }
+    };
+
+    // Crear la colección de vista con las opciones
+    var menuCollectionView = new CollectionView
+    {
+        ItemsSource = options,
+        ItemTemplate = new DataTemplate(() =>
         {
-            var options = new ObservableCollection<OptionWithImage>
+            // Crear una cuadrícula para cada elemento de la colección
+            var grid = new Grid();
+
+            // Definir la estructura de la cuadrícula
+            grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+
+            // Crear la imagen
+            var image = new Image
             {
-                new OptionWithImage { Option = "Inicio", ImageSource = "home.png" },
-                new OptionWithImage { Option = "Busqueda", ImageSource = "search.png" },
-                new OptionWithImage { Option = "Cerrar sesion", ImageSource = "logout.png" }
+                WidthRequest = 50,
+                HeightRequest = 50,
+                Aspect = Aspect.AspectFit // Ajustar la relación de aspecto de la imagen
             };
+            image.SetBinding(Image.SourceProperty, "ImageSource");
 
-            var menuCollectionView = new CollectionView
+            // Crear la etiqueta de texto
+            var label = new Label
             {
-                ItemsSource = options,
-                ItemTemplate = new DataTemplate(() =>
-                {
-                    var grid = new Grid();
-                    grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-
-                    var image = new Image
-                    {
-                        WidthRequest=50,
-                        HeightRequest=50,
-                    };
-                    image.SetBinding(Image.SourceProperty, "ImageSource");
-
-                    var label = new Label { VerticalOptions = LayoutOptions.CenterAndExpand };
-                    label.SetBinding(Label.TextProperty, "Option");
-
-                    grid.Children.Add(image);
-                    grid.Children.Add(label);
-
-                    var tapGestureRecognizer = new TapGestureRecognizer();
-                    tapGestureRecognizer.Tapped += async (s, args) =>
-                    {
-                        var selectedOption = (OptionWithImage)((View)s).BindingContext;
-                        if (selectedOption != null)
-                        {
-                            switch (selectedOption.Option)
-                            {
-                                case "Inicio":
-                                    await Navigation.PushAsync(new InicioPage());
-                                    break;
-
-                                case "Busqueda":
-                                    await Navigation.PushAsync(new Dashboard());
-                                    break;
-
-                                case "Cerrar sesion":
-                                    await Navigation.PushAsync(new MainPage());
-                                    break;
-                            }
-
-                            Navigation.PopModalAsync();
-                        }
-                    };
-
-                    grid.GestureRecognizers.Add(tapGestureRecognizer);
-
-                    return grid;
-                })
-            };
-
-            var frame = new Frame
-            {
-                Content = menuCollectionView,
-                Padding = new Thickness(10),
-                HasShadow = true,
-                CornerRadius = 5
-            };
-
-            var stackLayout = new StackLayout
-            {
-                Children = { frame },
                 VerticalOptions = LayoutOptions.CenterAndExpand,
-                HorizontalOptions = LayoutOptions.CenterAndExpand
+                Margin = new Thickness(10, 0, 0, 0) // Agregar margen a la izquierda de la etiqueta
             };
+            label.SetBinding(Label.TextProperty, "Option");
 
-            var scrollView = new ScrollView { Content = stackLayout };
+            // Agregar la imagen y la etiqueta a la cuadrícula
+            grid.Children.Add(image);
+            grid.Children.Add(label);
 
-            var popup = new ContentPage
+            // Configurar el reconocimiento de gestos
+            var tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += async (s, args) =>
             {
-                Content = scrollView,
+                var selectedOption = (OptionWithImage)((View)s).BindingContext;
+                if (selectedOption != null)
+                {
+                    // Manejar la selección de la opción
+                    await HandleMenuOptionSelection(selectedOption.Option);
+                }
             };
 
-            await Navigation.PushModalAsync(popup);
-        }
+            // Agregar el reconocimiento de gestos a la cuadrícula
+            grid.GestureRecognizers.Add(tapGestureRecognizer);
+
+            // Devolver la cuadrícula como el contenido del elemento de la colección
+            return grid;
+        })
+    };
+
+    // Crear un marco para el menú
+    var frame = new Frame
+    {
+        Content = menuCollectionView,
+        Padding = new Thickness(10),
+        HasShadow = true,
+        CornerRadius = 10, // Aumentar el radio de la esquina para un aspecto más redondeado
+    };
+
+    // Crear un diseño de apilamiento para contener el marco
+    var stackLayout = new StackLayout
+    {
+        Children = { frame },
+        VerticalOptions = LayoutOptions.CenterAndExpand,
+        HorizontalOptions = LayoutOptions.CenterAndExpand
+    };
+
+    // Crear un visor de desplazamiento que contiene el diseño de apilamiento
+    var scrollView = new ScrollView { Content = stackLayout };
+
+    // Crear una página de contenido para el menú emergente
+    var popup = new ContentPage
+    {
+        Content = scrollView
+    };
+
+    // Mostrar el menú emergente como una página modal
+    await Navigation.PushModalAsync(popup);
+}
+
+// Método para manejar la selección de opciones del menú
+private async Task HandleMenuOptionSelection(string option)
+{
+    switch (option)
+    {
+        case "Inicio":
+            await Navigation.PushAsync(new InicioPage());
+            break;
+
+        case "Búsqueda":
+            await Navigation.PushAsync(new Dashboard());
+            break;
+
+        case "Cerrar sesión":
+            await Navigation.PushAsync(new MainPage());
+            break;
+    }
+
+    // Cerrar el menú emergente después de seleccionar una opción
+    await Navigation.PopModalAsync();
+}
+
 
 
         public class OptionWithImage

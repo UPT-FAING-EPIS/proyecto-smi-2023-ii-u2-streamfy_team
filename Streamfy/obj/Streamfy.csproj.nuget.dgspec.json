@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\renat\\Downloads\\Streamfy\\Streamfy.csproj": {}
+    "D:\\DESCARGAS\\Streamfy (2)\\Streamfy\\Streamfy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\renat\\Downloads\\Streamfy\\Streamfy.csproj": {
+    "D:\\DESCARGAS\\Streamfy (2)\\Streamfy\\Streamfy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\renat\\Downloads\\Streamfy\\Streamfy.csproj",
+        "projectUniqueName": "D:\\DESCARGAS\\Streamfy (2)\\Streamfy\\Streamfy.csproj",
         "projectName": "Streamfy",
-        "projectPath": "C:\\Users\\renat\\Downloads\\Streamfy\\Streamfy.csproj",
-        "packagesPath": "C:\\Users\\renat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\renat\\Downloads\\Streamfy\\obj\\",
+        "projectPath": "D:\\DESCARGAS\\Streamfy (2)\\Streamfy\\Streamfy.csproj",
+        "packagesPath": "C:\\Users\\Farley #30\\.nuget\\packages\\",
+        "outputPath": "D:\\DESCARGAS\\Streamfy (2)\\Streamfy\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\renat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Farley #30\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0-android",
@@ -29,7 +24,6 @@
           "net7.0-windows10.0.19041.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
